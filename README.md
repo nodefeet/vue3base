@@ -47,7 +47,17 @@ npm run test:e2e # or `npm run test:e2e:ci` for headless testing
 npm run lint
 ```
 
-## Format with [Prettier](<https://vueschool.io/articles/vuejs-tutorials/eslint-and-prettier-with-vite-and-vue-js-3/>)
+## Setup VScode
+
+Enable ESLint and Prettier Extensions
+
+### Add as Prettier as ESLint [Plugin](<https://dev.to/s2engineers/how-to-make-eslint-work-with-prettier-avoiding-conflicts-and-problems-57pi>)
+
+plugins: ['prettier'],
+
+Additional steps only necessary if prettier and eslint not installed
+
+### Format with [Prettier](<https://vueschool.io/articles/vuejs-tutorials/eslint-and-prettier-with-vite-and-vue-js-3/>)
 
 ### Installing Prettier
 
@@ -64,6 +74,7 @@ echo {}> .prettierrc.json
 ### Installing ESLint
 
 Maybe alread done
+
 ```sh
 npm install --save-dev eslint eslint-plugin-vue
 ```
@@ -71,8 +82,3 @@ npm install --save-dev eslint eslint-plugin-vue
 ```sh
 npm install eslint-config-prettier --save-dev
 ```
-
-### Add as as [Plugin]
-(<https://dev.to/s2engineers/how-to-make-eslint-work-with-prettier-avoiding-conflicts-and-problems-57pi>)
-
-plugins: ['prettier'],
